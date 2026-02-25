@@ -1,26 +1,26 @@
 class Kubeclaw < Formula
   desc "Kubernetes-native AI agent orchestration platform CLI"
   homepage "https://github.com/AlexsJones/kubeclaw"
-  version "0.0.34"
+  version "0.0.35"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/AlexsJones/kubeclaw/releases/download/v#{version}/kubeclaw-darwin-arm64.tar.gz"
-      sha256 "0b65800b3c05f62458c6497d4a717899fcae3ef46bb6087482a174bc28605296"
+      sha256 "f497728027619ecb4c79d894844e0c710b025d057733d092432437e5498ea9a3"
     else
       url "https://github.com/AlexsJones/kubeclaw/releases/download/v#{version}/kubeclaw-darwin-amd64.tar.gz"
-      sha256 "c4f7bc6e6dd1d8631b4272e44cee13ba7ce6a14408df39cf464054f2d81d837e"
+      sha256 "ea11999e4d433b05810d67a39bf287a69b27e2f88821ce681232d92a1a34ee32"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/AlexsJones/kubeclaw/releases/download/v#{version}/kubeclaw-linux-arm64.tar.gz"
-      sha256 "d9f320fb8549c310b92de96e5e50b2c41fae3ce419ed982a5667fce1cccd9343"
+      sha256 "eebd72117a080f54ed03a0821b565a15070ead8f4c8a54c8b3abe1d93d369b27"
     else
       url "https://github.com/AlexsJones/kubeclaw/releases/download/v#{version}/kubeclaw-linux-amd64.tar.gz"
-      sha256 "b25d65d9f6d7b0b38fc3bd4e178930db8fb41ec0368edaccfdf080501531384e"
+      sha256 "2a0d74e0c1fc82ec85560867494ff5d5521c0eb09d06deea3fd5a8f0579f6911"
     end
   end
 
