@@ -7,20 +7,20 @@ class Sympozium < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/AlexsJones/sympozium/releases/download/v#{version}/sympozium-darwin-arm64.tar.gz"
-      sha256 "cf0d7244a4521740c4d829495525496b4ff96086010281df55dd2f35efc3ace6"
+      sha256 "841758cbd93ed031060703d9e025a640a1f72ab29e6367b4b3ac6e6b633cd5c9"
     else
       url "https://github.com/AlexsJones/sympozium/releases/download/v#{version}/sympozium-darwin-amd64.tar.gz"
-      sha256 "9eff342bf821dd107bdd066f9d3a2e24c385e6384d15553ee6d30c84b8255d2b"
+      sha256 "b4e8461119f24301dd373c5778ec3ff307582142d0ece4955d55e75d0c8e96c3"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/AlexsJones/sympozium/releases/download/v#{version}/sympozium-linux-arm64.tar.gz"
-      sha256 "6ef3aa2f56cc918bbedec09d7346fa9c19f0fb582a4264a72d8541f1b17648e6"
+      sha256 "08a1b8e74867e5d99c727efa0a3fb3fdc193be61af68a90b9e5d679c9ff5c518"
     else
       url "https://github.com/AlexsJones/sympozium/releases/download/v#{version}/sympozium-linux-amd64.tar.gz"
-      sha256 "7cd70c39546d4e65d31ed8ee9e9b1e600533266f91be49929e4e0c76e894df50"
+      sha256 "e03efad9c33ad050e2b36601e341a7800b474cfeb4784e6c57327a65e4623aab"
     end
   end
 
